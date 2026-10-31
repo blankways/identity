@@ -1,6 +1,6 @@
 {
   "name": "@blank-js/identity",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.68ca969",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsc && tsc-alias",
+    "prepublishOnly": "pnpm version 1.0.0-alpha.$(git rev-parse --short HEAD) --no-git-tag-version",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
