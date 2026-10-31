@@ -12,7 +12,6 @@
   },
   "scripts": {
     "build": "tsc && tsc-alias",
-    "prepublishOnly": "pnpm version 1.0.0-alpha.$(git rev-parse --short HEAD) --no-git-tag-version",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
