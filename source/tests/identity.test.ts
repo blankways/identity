@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { Identity } from '../index.js'
+import type { Family } from '../index.js'
 
 describe('Identity.Family', () => {
     it('creates a family that can be used to create identifiers', () => {
-        const family = Identity.Family.create()
+        const family: Family<'users'> = Identity.Family.create<'users'>()
 
         expect(() => Identity.Identifier.create(family)).not.toThrow()
     })
