@@ -38,3 +38,8 @@ Returns `true` if the identifier's numeric value is registered in the family; ot
 - `pnpm test`: runs the Vitest test suite.
 - `pnpm typecheck`: checks TypeScript types.
 - `pnpm build`: generates the distribution files.
+
+
+## License
+
+This project is available under the [MIT License](./LICENSE).
